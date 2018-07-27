@@ -5,19 +5,19 @@ static const char *fonts[] = {
 	"monospace:size=10"
 };
 static const char dmenufont[]       = "monospace:size=10";
-static const char normbordercolor[] = "#002b35";
+static const char normbordercolor[] = "#073642";
 static const char normbgcolor[]     = "#002b36";
-static const char normfgcolor[]     = "#657b83";
-static const char selbordercolor[]  = "#93a1a1";
-static const char selbgcolor[]      = "#93a1a1";
-static const char selfgcolor[]      = "#002b36";
+static const char normfgcolor[]     = "#fdf6e3";
+static const char selbordercolor[]  = "#586e75";
+static const char selbgcolor[]      = "#073642";
+static const char selfgcolor[]      = "#fdf6e3";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "browser", "terminal", "signal", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "terminal", "browser", "chat", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
