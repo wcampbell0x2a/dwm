@@ -18,7 +18,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "terminal", "browser", "chat", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "terminal", "browser", "chat", "git", "keeweb", "VI", "VII", "VIII", "IX" };
 
 static const Rule rules[] = {
 	/* xprop(1):
