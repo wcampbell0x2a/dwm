@@ -12,7 +12,7 @@ static const char selbordercolor[]  = "#586e75";
 static const char selbgcolor[]      = "#073642";
 static const char selfgcolor[]      = "#fdf6e3";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx      = 5;        /* gap pixel  between windows */
+static const unsigned int gappx      = 0;        /* gap pixel  between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -22,7 +22,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "terminal", "browser", "chat", "git", "keeweb", "VI", "VII", "VIII", "IX" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
