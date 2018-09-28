@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"scientifica:size=11"
 };
-static const char dmenufont[]       = "monospace:size=10";
+static const char dmenufont[]       = "scientifica:size=11";
 static const char normbordercolor[] = "#073642";
 static const char normbgcolor[]     = "#002b36";
 static const char normfgcolor[]     = "#fdf6e3";
