@@ -60,7 +60,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "dbus-launch", "gnome-terminal", "--zoom=0.8", NULL };
+static const char *termcmd[]  = { "kitty"};
 static const char *lockscreen[] = {"slock", "-m I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux..."};
 
 static Key keys[] = {
