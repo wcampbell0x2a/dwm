@@ -62,6 +62,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-i", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st"};
 static const char *lockscreen[] = {"slock", "-m I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux..."};
+static const char *volup[] = {"pamixer", "-i", "5"};
+static const char *voldown[] = {"pamixer", "-d", "5"};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -89,6 +91,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+    { MODKEY,                       XK_Up,     spawn,          {.v = volup } },
+    { MODKEY,                       XK_Down,   spawn,          {.v = voldown } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
