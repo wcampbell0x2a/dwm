@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"scientifica:size=11"
+	"hack:pixelsize=12:antialias=true:autohint=true"
 };
-static const char dmenufont[]       = "scientifica:size=11";
+static const char dmenufont[]       = "Hack:pixelsize=12:antialias=true:autohint=true";
 static const char normbordercolor[] = "#073642";
 static const char normbgcolor[]     = "#002b36";
 static const char normfgcolor[]     = "#fdf6e3";

@@ -832,7 +832,7 @@ drawbar(Monitor *m)
 	unsigned int i, occ = 0, urg = 0;
 	Client *c;
 
-	dx = (drw->fonts[0]->ascent + drw->fonts[0]->descent + 2);
+	dx = (drw->fonts[0]->ascent + drw->fonts[0]->descent + 4);
 
 	resizebarwin(m);
 	for (c = m->clients; c; c = c->next) {
@@ -845,7 +845,7 @@ drawbar(Monitor *m)
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, m->tagset[m->seltags] & 1 << i ? &scheme[SchemeSel] : &scheme[SchemeNorm]);
 		drw_text(drw, x, 0, w, bh, tags[i], urg & 1 << i);
-		drw_rect(drw, x + 1, 1, dx, 2, m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
+		drw_rect(drw, x + 1, 1, dx, 1, m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
 		           occ & 1 << i, urg & 1 << i);
 		x += w;
 	}
