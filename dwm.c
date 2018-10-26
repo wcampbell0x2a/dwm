@@ -869,7 +869,7 @@ drawbar(Monitor *m)
 		if (m->sel) {
 			drw_setscheme(drw, m == selmon ? &scheme[SchemeSel] : &scheme[SchemeNorm]);
 			drw_text(drw, x, 0, w, bh, m->sel->name, 0);
-			drw_rect(drw, x + 1, 1, dx, dx, m->sel->isfixed, m->sel->isfloating, 0);
+			drw_rect(drw, x + 1, 1, dx, dx, m->sel->isfixed, 0, 0);
 		} else {
 			drw_setscheme(drw, &scheme[SchemeNorm]);
 			drw_rect(drw, x, 0, w, bh, 1, 0, 1);
