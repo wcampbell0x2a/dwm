@@ -58,7 +58,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-i", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *lockscreen[] = {"slock", "-m I'd just like to interject for a moment. What you're referring to as Linux, is in face, GNU/Linux..."};
+static const char *lockscreen[] = {"slock", "-m I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux..."};
 static const char *termcmd[]  = { "st", "-e", "tmux" };
 static const char *volup[] = {"pamixer", "-i", "5"};
 static const char *voldown[] = {"pamixer", "-d", "5"};
