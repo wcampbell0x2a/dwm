@@ -1,4 +1,5 @@
 /* See LICENSE file for copyright and license details. */
+#include <X11/XF86keysym.h>
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -7,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "Hack:pixelsize=12:antialias=true:autohint=true";
-static const char col_gray1[]       = "#002b36";
-static const char col_gray2[]       = "#073642";
-static const char col_gray3[]       = "#fdf6e3";
-static const char col_gray4[]       = "#fdf6e3";
-static const char col_cyan[]        = "#073642";
+static const char col_gray1[]       = "#2e3440";
+static const char col_gray2[]       = "#3b4252";
+static const char col_gray3[]       = "#d8dee9";
+static const char col_gray4[]       = "#81a1c1";
+static const char col_cyan[]        = "#2e3440";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -58,7 +59,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-i", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *lockscreen[] = {"slock", "-m I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux..."};
+static const char *lockscreen[] = {"xscreensaver-command", "-lock"};
 static const char *termcmd[]  = { "st", "-e", "tmux" };
 static const char *volup[] = {"pamixer", "-i", "5"};
 static const char *voldown[] = {"pamixer", "-d", "5"};
@@ -91,6 +92,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
     { MODKEY,                       XK_Up,     spawn,          {.v = volup } },
     { MODKEY,                       XK_Down,   spawn,          {.v = voldown } },
+    { MODKEY,                       XF86XK_AudioRaiseVolume,     spawn,          {.v = volup } },
+    { MODKEY,                       XF86XK_AudioLowerVolume,     spawn,          {.v = voldown } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
