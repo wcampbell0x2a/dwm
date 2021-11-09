@@ -9,10 +9,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "Hack:pixelsize=12:antialias=true:autohint=true";
 static const char col_gray1[]       = "#2e3440";
-static const char col_gray2[]       = "#3b4252";
+static const char col_gray2[]       = "#4c566a";
 static const char col_gray3[]       = "#d8dee9";
-static const char col_gray4[]       = "#81a1c1";
-static const char col_cyan[]        = "#2e3440";
+static const char col_gray4[]       = "#4c566a";
+static const char col_cyan[]        = "#eceff4";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
