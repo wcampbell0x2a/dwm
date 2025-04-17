@@ -6,8 +6,8 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 10;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Hack:pixelsize=12:antialias=true:autohint=true" };
-static const char dmenufont[]       = "Hack:pixelsize=12:antialias=true:autohint=true";
+static const char *fonts[]          = { "Berkeley Mono:pixelsize=12:antialias=true:autohint=true" };
+static const char dmenufont[]       = "BerkeleyMono:pixelsize=12:antialias=true:autohint=true";
 static const char col_gray1[]       = "#2e3440";
 static const char col_gray2[]       = "#4c566a";
 static const char col_gray3[]       = "#d8dee9";
